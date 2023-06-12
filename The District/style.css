@@ -37,7 +37,8 @@
   }
 
   body {
-    background-color: grey; 
+    
+    background-color:#47B4D1; 
     /*font-family: Arial, sans-serif;*/
     margin: 0;
     padding: 0;
@@ -60,3 +61,132 @@
     margin: 0 50px;
     border-radius: 25px;
   }
+
+  .parallax{
+  /*Ajout de l'image de fond*/
+    background-image: url(/images_the_district/bg.jpg);
+  /* Une hauteur spécifique */
+    height: 100vh;
+
+  /* L'effet de parallax */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+  color: white;
+  font-size: 75px;
+  text-align: center;
+}
+
+.img_cat_plat{
+  display: flex;
+    justify-content: center;
+}
+
+.img_cat_plat img{
+    max-width: 100px;
+    margin: 0 50px;
+    border-radius: 25px;
+}
+
+.img_cat_plat img:nth-child(3n) {
+  margin-right: 0;
+  clear: both;
+}
+
+.zoom-image-container {
+  overflow: hidden; /* Masque les parties de l'image en dehors du conteneur */
+}
+
+.zoom-image-container img {
+  transition: transform 0.3s ease; /* Ajoute une transition fluide */
+}
+
+.zoom-image-container:hover img {
+  transform: scale(1.2); /* Applique une échelle de 1.2 pour agrandir l'image */
+}
+/* Styles pour la version mobile */
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  section {
+    padding: 10px;
+  }
+  footer
+  {
+    padding: 10px;
+  }
+  .IMGRS{
+    display: flex;
+    justify-content: center;
+  }
+
+  .IMGRS img{
+    max-width: 50px;
+    margin: 0 25px;
+    border-radius: 25px;
+  }
+
+  .img_cat_plat{
+    display: flex;
+      justify-content: center;
+  }
+  
+  .img_cat_plat img{
+    max-width: 50px;
+      margin: 0 25px;
+      border-radius: 25px;
+  }
+
+  a{
+    color:rgb(0, 0, 0);
+    text-size-adjust: 5px;
+ }
+
+ .header {
+    display: flex;
+    align-items: left;
+    text-align: left;
+    padding: 1px;
+  }
+  .header a{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin: 0 2px;
+    font-weight: bold;
+  }
+  .logo {
+    width: 55px; /* Ajustez la largeur selon vos besoins */
+    border-radius: 15px;
+  }
+  
+  .links {
+    list-style: none;
+    display: flex;
+    margin-left:15%; /* Déplace les liens à droite */
+  }
+  
+  .links li {
+    margin-left: 5px; /* Espacement entre les liens */
+  }
+  
+  .links li:first-child {
+    margin-left: 0px; /* Supprime l'espacement pour le premier lien */
+  }
+
+  header, nav, section, footer {
+    background-color: red;
+    padding: 10px;
+    border-radius: 25px;
+    align-items: center;
+  }
+}
