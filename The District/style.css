@@ -2,21 +2,47 @@
  a{
     color:rgb(0, 0, 0);
     text-size-adjust: 100px;
+    text-align: left;
  }
 
  .header {
     display: flex;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
   }
   .header a{
     font-family:'Times New Roman', Times, serif;
     font-size: 50px;
-    margin: 0 35px;
+    margin: 0 5px;
     font-weight: bold;
   }
+
+  .footer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color:transparent;
+    padding: 10px;
+    border-radius: 25px;
+    justify-content: center;
+  }
+
+  .footer a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin: 0 5px;
+    font-weight: bold;
+    align-items: center;
+  }
   
+
+
   .logo {
     width: 125px; /* Ajustez la largeur selon vos besoins */
     border-radius: 25px;
@@ -38,14 +64,17 @@
 
   body {
     
-    background-color:#47B4D1; 
+    background-image:url(/images_the_district/bg.jpg); 
     /*font-family: Arial, sans-serif;*/
     margin: 0;
     padding: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   header, nav, section, footer {
-    background-color: red;
     padding: 10px;
     border-radius: 25px;
     align-items: center;
@@ -60,11 +89,11 @@
     max-width: 100px;
     margin: 0 50px;
     border-radius: 25px;
+    
   }
 
-  .parallax{
+  .parallax-bg{
   /*Ajout de l'image de fond*/
-    background-image: url(/images_the_district/bg.jpg);
   /* Une hauteur spécifique */
     height: 100vh;
 
@@ -75,9 +104,26 @@
   background-size: cover;
 }
 
+.parallax-entete{
+  background-image: url(/images_the_district/bg1.jpeg);
+  height: 25vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  background-color:#47B4D1;
+}
+
 h1{
-  color: white;
-  font-size: 75px;
+  color: rgb(252, 252, 252);
+  font-size: 50px;
+  top: 15%;
+  left: 19%;
+}
+H2{
+  color:black;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -87,18 +133,29 @@ h1{
 }
 
 .img_cat_plat img{
-    max-width: 100px;
+    max-width: 200px;
+    height:300px;
     margin: 0 50px;
     border-radius: 25px;
 }
 
-.img_cat_plat img:nth-child(3n) {
-  margin-right: 0;
-  clear: both;
+.img_plat{
+  display: flex;
+    justify-content: center;
+    margin: 0 100 px;
+}
+
+.img_plat img{
+    max-width: 200px;
+    width: 150px;
+    height:150px;
+    margin: 0 50px;
+    border-radius: 25px;
 }
 
 .zoom-image-container {
   overflow: hidden; /* Masque les parties de l'image en dehors du conteneur */
+  
 }
 
 .zoom-image-container img {
@@ -108,10 +165,40 @@ h1{
 .zoom-image-container:hover img {
   transform: scale(1.2); /* Applique une échelle de 1.2 pour agrandir l'image */
 }
+.search-bar {
+  position: absolute;
+  top: 40%;
+  left: 9%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  width: 300px;
+  background-color: rgba(48, 23, 23, 0.7);
+  padding: 10px;
+  border-radius: 25px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  margin-left: 8px;
+  padding: 8px 12px;
+  background-color: #0b86be;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
 /* Styles pour la version mobile */
 @media (max-width: 768px) {
   header {
-    padding: 10px;
+    padding: 100px;
   }
 
   nav {
@@ -120,6 +207,7 @@ h1{
 
   section {
     padding: 10px;
+    display: flex;
   }
   footer
   {
@@ -142,8 +230,23 @@ h1{
   }
   
   .img_cat_plat img{
-    max-width: 50px;
-      margin: 0 25px;
+    max-width: 100px;
+    width: 50px;
+    height: 100px;
+      margin: 0 15px;
+      border-radius: 25px;
+  }
+
+  .img_plat{
+    display: flex;
+      justify-content: center;
+  }
+  
+  .img_plat img{
+    max-width: 100px;
+    width: 100px;
+    height: 100px;
+      margin: 0 15px;
       border-radius: 25px;
   }
 
@@ -186,7 +289,38 @@ h1{
   header, nav, section, footer {
     background-color: red;
     padding: 10px;
-    border-radius: 25px;
+    border-radius: 5px;
     align-items: center;
+  }
+  .parallax-entete{
+    background-image: url(/images_the_district/bg1.jpeg);
+    height: 25vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    background-color:#47B4D1;
+  }
+ 
+  .search-bar {
+    position: relative;
+    top: 25px;
+    left: 5px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    width: 10px;
+    background-color: rgba(48, 23, 23, 0.7);
+    padding: 10px;
+    border-radius: 25px;
+    font-size:15px ;
+  }
+  h1{
+    color: rgb(252, 252, 252);
+    position: relative;
+    top: 5px;
+    left: 10px;
+    font-size: 32px;
   }
 }
