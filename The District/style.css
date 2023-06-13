@@ -1,101 +1,108 @@
+a {
+  color: rgb(0, 0, 0);
+  text-size-adjust: 100px;
+  text-align: left;
+}
 
- a{
-    color:rgb(0, 0, 0);
-    text-size-adjust: 100px;
-    text-align: left;
- }
+.header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
- .header {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-  }
-  .header a{
-    font-family:'Times New Roman', Times, serif;
-    font-size: 50px;
-    margin: 0 5px;
-    font-weight: bold;
-  }
+}
 
-  .footer{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background-color:transparent;
-    padding: 10px;
-    border-radius: 25px;
-    justify-content: center;
-  }
+.header a {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  margin: 0 5px;
+  font-weight: bold;
+}
 
-  .footer a{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-    margin: 0 5px;
-    font-weight: bold;
-    align-items: center;
-  }
-  
+.footer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 25px;
+  justify-content: center;
+}
+
+.footer a {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  margin: 0 5px;
+  font-weight: bold;
+  align-items: center;
+}
 
 
-  .logo {
-    width: 125px; /* Ajustez la largeur selon vos besoins */
-    border-radius: 25px;
-  }
-  
-  .links {
-    list-style: none;
-    display: flex;
-    margin-left:25%; /* Déplace les liens à droite */
-  }
-  
-  .links li {
-    margin-left: 10px; /* Espacement entre les liens */
-  }
-  
-  .links li:first-child {
-    margin-left: 0; /* Supprime l'espacement pour le premier lien */
-  }
 
-  body {
-    
-    background-image:url(/images_the_district/bg.jpg); 
-    /*font-family: Arial, sans-serif;*/
-    margin: 0;
-    padding: 0;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  header, nav, section, footer {
-    padding: 10px;
-    border-radius: 25px;
-    align-items: center;
-  }
+.logo {
+  width: 125px;
+  /* Ajustez la largeur selon vos besoins */
+  border-radius: 25px;
+}
 
-  .IMGRS{
-    display: flex;
-    justify-content: center;
-  }
+.links {
+  list-style: none;
+  display: flex;
+  margin-left: 25%;
+  /* Déplace les liens à droite */
+}
 
-  .IMGRS img{
-    max-width: 100px;
-    margin: 0 50px;
-    border-radius: 25px;
-    
-  }
+.links li {
+  margin-left: 10px;
+  /* Espacement entre les liens */
+}
 
-  .parallax-bg{
+.links li:first-child {
+  margin-left: 0;
+  /* Supprime l'espacement pour le premier lien */
+}
+
+body {
+
+  background-image: url(/images_the_district/bg.jpg);
+  /*font-family: Arial, sans-serif;*/
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header,
+nav,
+section,
+footer {
+  padding: 10px;
+  border-radius: 25px;
+  align-items: center;
+}
+
+.IMGRS {
+  display: flex;
+  justify-content: center;
+}
+
+.IMGRS img {
+  max-width: 100px;
+  margin: 0 50px;
+  border-radius: 25px;
+
+}
+
+.parallax-bg {
   /*Ajout de l'image de fond*/
   /* Une hauteur spécifique */
-    height: 100vh;
+  height: 100vh;
 
   /* L'effet de parallax */
   background-attachment: fixed;
@@ -104,7 +111,7 @@
   background-size: cover;
 }
 
-.parallax-entete{
+.parallax-entete {
   background-image: url(/images_the_district/bg1.jpeg);
   height: 25vh;
   background-attachment: fixed;
@@ -112,59 +119,64 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 25px;
-  background-color:#47B4D1;
+  background-color: #47B4D1;
 }
 
-h1{
+h1 {
   color: rgb(252, 252, 252);
   font-size: 50px;
   top: 15%;
   left: 19%;
 }
-H2{
-  color:black;
+
+H2 {
+  color: black;
   font-size: 30px;
   text-align: center;
 }
 
-.img_cat_plat{
+.img_cat_plat {
   display: flex;
-    justify-content: center;
+  justify-content: center;
 }
 
-.img_cat_plat img{
-    max-width: 200px;
-    height:300px;
-    margin: 0 50px;
-    border-radius: 25px;
+.img_cat_plat img {
+  max-width: 200px;
+  height: 300px;
+  margin: 0 50px;
+  border-radius: 25px;
 }
 
-.img_plat{
+.img_plat {
   display: flex;
-    justify-content: center;
-    margin: 0 100 px;
+  justify-content: center;
+  margin: 0 100 px;
 }
 
-.img_plat img{
-    max-width: 200px;
-    width: 150px;
-    height:150px;
-    margin: 0 50px;
-    border-radius: 25px;
+.img_plat img {
+  max-width: 200px;
+  width: 150px;
+  height: 150px;
+  margin: 0 50px;
+  border-radius: 25px;
 }
 
 .zoom-image-container {
-  overflow: hidden; /* Masque les parties de l'image en dehors du conteneur */
-  
+  overflow: hidden;
+  /* Masque les parties de l'image en dehors du conteneur */
+
 }
 
 .zoom-image-container img {
-  transition: transform 0.3s ease; /* Ajoute une transition fluide */
+  transition: transform 0.3s ease;
+  /* Ajoute une transition fluide */
 }
 
 .zoom-image-container:hover img {
-  transform: scale(1.2); /* Applique une échelle de 1.2 pour agrandir l'image */
+  transform: scale(1.2);
+  /* Applique une échelle de 1.2 pour agrandir l'image */
 }
+
 .search-bar {
   position: absolute;
   top: 40%;
@@ -194,6 +206,28 @@ button[type="submit"] {
   cursor: pointer;
 }
 
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev-btn,
+.next-btn {
+
+  padding: 10px 20px;
+  background-color: #ccc;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.prev-btn {
+  margin-right: 10px;
+}
+
+.next-btn {
+  margin-left: 10px;
+}
 
 /* Styles pour la version mobile */
 @media (max-width: 768px) {
@@ -209,90 +243,103 @@ button[type="submit"] {
     padding: 10px;
     display: flex;
   }
-  footer
-  {
+
+  footer {
     padding: 10px;
   }
-  .IMGRS{
+
+  .IMGRS {
     display: flex;
     justify-content: center;
   }
 
-  .IMGRS img{
+  .IMGRS img {
     max-width: 50px;
     margin: 0 25px;
     border-radius: 25px;
   }
 
-  .img_cat_plat{
+  .img_cat_plat {
     display: flex;
-      justify-content: center;
-  }
-  
-  .img_cat_plat img{
-    max-width: 100px;
-    width: 50px;
-    height: 100px;
-      margin: 0 15px;
-      border-radius: 25px;
+    justify-content: center;
   }
 
-  .img_plat{
-    display: flex;
-      justify-content: center;
-  }
-  
-  .img_plat img{
+  .img_cat_plat img {
     max-width: 100px;
-    width: 100px;
+    width: 150px;
     height: 100px;
-      margin: 0 15px;
-      border-radius: 25px;
+    margin: 0 15px;
+    border-radius: 25px;
   }
 
-  a{
-    color:rgb(0, 0, 0);
+  .img_plat {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .img_plat img {
+    max-width: 100px;
+    width: 300px;
+    height: 100px;
+    margin: 0 15px;
+    border-radius: 25px;
+  }
+
+  a {
+    color: rgb(0, 0, 0);
     text-size-adjust: 5px;
- }
+  }
 
- .header {
+  .header {
     display: flex;
     align-items: left;
     text-align: left;
     padding: 1px;
+    border-radius: 25px;
   }
-  .header a{
-    font-family:'Times New Roman', Times, serif;
+
+  .header a {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
     margin: 0 2px;
     font-weight: bold;
   }
+
   .logo {
-    width: 55px; /* Ajustez la largeur selon vos besoins */
+    width: 55px;
+    /* Ajustez la largeur selon vos besoins */
     border-radius: 15px;
   }
-  
+
   .links {
     list-style: none;
     display: flex;
-    margin-left:15%; /* Déplace les liens à droite */
-  }
-  
-  .links li {
-    margin-left: 5px; /* Espacement entre les liens */
-  }
-  
-  .links li:first-child {
-    margin-left: 0px; /* Supprime l'espacement pour le premier lien */
+    margin-left: 15%;
+    /* Déplace les liens à droite */
   }
 
-  header, nav, section, footer {
+  .links li {
+    margin-left: 5px;
+    /* Espacement entre les liens */
+  }
+
+  .links li:first-child {
+    margin-left: 0px;
+    /* Supprime l'espacement pour le premier lien */
+  }
+
+  header,
+  nav,
+  section,
+  footer {
     background-color: red;
     padding: 10px;
     border-radius: 5px;
     align-items: center;
   }
-  .parallax-entete{
+
+  .parallax-entete {
     background-image: url(/images_the_district/bg1.jpeg);
     height: 25vh;
     background-attachment: fixed;
@@ -300,9 +347,9 @@ button[type="submit"] {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 25px;
-    background-color:#47B4D1;
+    background-color: #47B4D1;
   }
- 
+
   .search-bar {
     position: relative;
     top: 25px;
@@ -314,13 +361,22 @@ button[type="submit"] {
     background-color: rgba(48, 23, 23, 0.7);
     padding: 10px;
     border-radius: 25px;
-    font-size:15px ;
+    font-size: 15px;
   }
-  h1{
+
+  h1 {
     color: rgb(252, 252, 252);
     position: relative;
     top: 5px;
     left: 10px;
     font-size: 32px;
+  }
+
+  h2 {
+    color: rgb(252, 252, 252);
+    position: relative;
+    top: 5px;
+    left: 5px;
+    font-size: 18px;
   }
 }
