@@ -47,6 +47,15 @@
   border-radius: 25px;
 }
 
+.couleurtitre{
+color: #FEF4E8 !important;
+}
+
+.couleurslogan{
+  color: #ff7800 !important;
+
+}
+
 .logo {
   width: 125px;
   border-radius: 25px;
