@@ -1,115 +1,212 @@
 <!DOCTYPE html>
-<html lang="fr-fr">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The District: -Catégorie</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!--CDN Bootstrap-->
   <link rel="stylesheet" href="/The District/style.css">
-  <title>The District: -Acceuil</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /><!--CDN Font-awesome-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script><!--CDN Bootstrap/JS-->
 </head>
 
 <body>
-  <div class="parallax-bg">
-    <!--<div class="scroll">-->
-    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>-->
-    <header><!--Début du header pour la partie Layout(entete) -->
-      <nav id="menu">
-        <div class="header">
-          <img class="logo" src="/images_the_district/the_district_brand/logo.png" alt="logo" title="logo">
-          <ul class="links"><!--début de la balise ul-->
-            <li><a href="index.html" class="couleurmenu">Acceuil</a></li>
-            <li><a href="/The District/Categorie.html" class="couleurmenu">Catégorie</a></li>
-            <li><a href="*" class="couleurmenu">Plats</a></li>
-            <li><a href="*" class="couleurmenu">Contact</a></li>
+  <header><!--Début du header pour la partie Layout(entete) -->
+    <nav class="color navbar navbar-expand-lg bg-danger rounded custom-rounded "><!--Début de la NavBar Bootstrap-->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="logo" src="/images_the_district/the_district_brand/logo.png"
+            alt="logo" title="logo"></a>
+        <ul class="col-3 nav-link couleurtitre fs-1"><u><b>The District</b></u></ul>
+        <button class="navbar-toggler col-btn" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-primary"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link custom-heading active fs-1" aria-current="page" href="/The District/index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-heading active fs-1" href="/The District/Categorie.html">Catégorie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link custom-heading active fs-1" href="/The District/Contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle custom-heading active fs-1" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Plats</a>
+              <ul class="dropdown-menu custom-heading" aria-labelledby="menudropdown">
+                <li><a class="dropdown-item custom-heading active fs-2" href="#">Asiatiques</a></li>
+                <li><a class="dropdown-item custom-heading active fs-2" href="#">Burgers</a></li>
+                <li><a class="dropdown-item custom-heading active fs-2" href="#">Pâtes</a></li>
+                <li><a class="dropdown-item custom-heading active fs-2" href="#">Pizzas</a></li>
+                <li><a class="dropdown-item custom-heading active fs-2" href="#">Salades</a></li>
+                <li><a class="dropdown-item custom-heading active fs-2" href="#">Sandwichs</a></li>
+                <li><a class="dropdown-item custom-heading active fs-2" href="#">Veggies</a></li>
+                <li><a class="dropdown-item custom-heading active fs-2" href="#">Wraps</a></li>
+                <li><a class="dropdown-item custom-heading active fs-2" href="#">Kebabs</a></li>
+                <li><a class="dropdown-item custom-heading active fs-2" href="#">Libanais</a></li>
+                <li><a class="dropdown-item custom-heading active fs-2" href="#">Paininis</a></li>
+                <li><a class="dropdown-item custom-heading active fs-2" href="#">Tacos</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="ml-auto">
+            <form class="d-flex justify-content-right align-items-center " role="search">
+              <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+              <button class="btn btn-outline-success color-search" type="submit">Rechercher</button>
+            </form>
           </ul>
         </div>
-      </nav>
-    </header><!--Fin du Header Layout-->
-    <div class="parallax-entete">
-      <h1>The District ! </h1>
-      <div class="search-bar">
-        <input type="text" placeholder="Rechercher...">
-        <button type="submit">Rechercher</button>
+      </div>
+    </nav><!--Fin de la NavBar-->
+  </header><!--Fin du header pour la partie Layout(entete) -->
+  <br>
+  <div class="d-flex justify-content-center couleur-navigation">
+    <!--Début de la partie affichage des catégorie Image+Titre-->
+    <div class="container   text-center">
+      <div class="row d-flex justify-content-center fs-1 text-center ">
+        <p class="couleurslogan"><strong>Un large choix sur nos plats !</strong></p>
+      </div>
+      <div class="row">
+        <div class="img-cat col-md-4 mb-4 ">
+          <img src="/images_the_district/category/asian_food_cat.jpg" class="d-block" alt="..."
+            style="width:250px;height:250px;">
+          <h4 class="couleurslogan">Asiatiques</h4>
+        </div>
+        <div class="img-cat col-md-4 mb-4 ">
+          <img src="/images_the_district/category/burger_cat.jpg" class="d-block" alt="..."
+            style="width:250px;height:250px;">
+          <h4 class="couleurslogan">Burgers</h4>
+        </div>
+        <div class="img-cat  col-md-4 mb-4">
+          <img src="/images_the_district/category/pasta_cat.jpg" class="d-block" alt="..."
+            style="width:250px;height:250px;">
+          <h4 class="couleurslogan">Pâtes</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="img-cat col-md-4 mb-4">
+          <img src="/images_the_district/category/pizza_cat.jpg" class="d-block" alt="..."
+            style="width:250px;height:250px;">
+          <h4 class="couleurslogan">Pizzas</h4>
+        </div>
+        <div class="img-cat col-md-4 mb-4">
+          <img src="/images_the_district/category/salade_cat.jpg" class="d-block" alt="..."
+            style="width:250px;height:250px;">
+          <h4 class="couleurslogan">Salades</h4>
+        </div>
+        <div class="img-cat col-md-4 mb-4">
+          <img src="/images_the_district/category/sandwich_cat.jpg" class="d-block" alt="..."
+            style="width:250px;height:250px;">
+          <h4 class="couleurslogan">Sandwichs</h4>
+        </div>
+      </div>
+      <div class="row d-none" id="secondRow">
+        <div class="img-cat col-md-4 mb-4">
+          <img src="/images_the_district/category/veggie_cat.jpg" class="d-block" alt="..."
+            style="width:250px;height:250px;">
+          <h4 class="couleurslogan">Veggies</h4>
+        </div>
+        <div class="img-cat col-md-4 mb-4">
+          <img src="/images_the_district/category/wrap_cat.jpg" class="d-block" alt="..."
+            style="width:250px;height:250px;">
+          <h4 class="couleurslogan">Wraps</h4>
+        </div>
+        <div class="img-cat col-md-4 mb-4">
+          <img src="/images_the_district/category/kebab.jpg" class="d-block" alt="..."
+            style="width:250px;height:250px;">
+          <h4 class="couleurslogan">Kebabs</h4>
+        </div>
+      </div>
+      <div class="row d-none" id="thirdRow">
+        <div class="img-cat col-md-4 mb-4">
+          <img src="/images_the_district/category/libanais-unver-kebab-lille.jpg" class="d-block" alt="..."
+            style="width:250px;height:250px;">
+          <h4 class="couleurslogan">Libanais</h4>
+        </div>
+        <div class="img-cat col-md-4 mb-4">
+          <img src="/images_the_district/category/Panini.jpeg" class="d-block" alt="..."
+            style="width:250px;height:250px;">
+          <h4 class="couleurslogan">Paninis</h4>
+        </div>
+        <div class="img-cat col-md-4 mb-4">
+          <img src="/images_the_district/category/Tacos.jpeg" class="d-block" alt="..."
+            style="width:250px;height:250px;">
+          <h4 class="couleurslogan">Tacos</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="img-cat col-12 text-center">
+          <button id="loadMoreBtn" class="btn btn-primary">Afficher plus</button>
+          <button id="showLessBtn" class="btn btn-secondary d-none">Afficher moins</button>
+        </div>
       </div>
     </div>
-    <BR><BR>
-    <div class="img_cat_plat">
+  </div><!--Fin de la partie affichage des catégorie Image+Titre-->
+  <script>//Partie Script en Java Script permettant d'afficher plus ou moins selon la demande l'utilisateur lors du clique sur les boutons//
+    // Récupérer les éléments du DOM
+    const secondRow = document.getElementById('secondRow');
+    const thirdRow = document.getElementById('thirdRow');
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    const showLessBtn = document.getElementById('showLessBtn');
 
-      <div class="zoom-image-container">
-        <br><br>
-        <img src="/images_the_district/category/asian_food_cat.jpg">
-        <br><br>
-        <h2>Asiatique</h2>
-      </div>
-      <div class="zoom-image-container">
-        <br><br>
-        <img src="/images_the_district/category/burger_cat.jpg">
-        <br><br>
-        <h2>Burger </h2>
-      </div>
-      <div class="zoom-image-container">
-        <br><br>
-        <img src="/images_the_district/category/pasta_cat.jpg">
-        <br><br>
-        <h2>Pâtes </h2>
-      </div>
-    </div>
-    <br>
-    <div class="img_cat_plat">
-      <div class="zoom-image-container">
-        <br><br>
-        <img src="/images_the_district/category/pizza_cat.jpg">
-        <br><br>
-        <h2>Pizza </h2>
-      </div>
+    // Ajouter un gestionnaire d'événements au bouton "Afficher plus"
+    loadMoreBtn.addEventListener('click', function () {
+      secondRow.classList.remove('d-none');
+      thirdRow.classList.remove('d-none');
+      loadMoreBtn.classList.add('d-none');
+      showLessBtn.classList.remove('d-none');
+    });
 
-      <div class="zoom-image-container">
-        <br><br>
-        <img src="/images_the_district/category/salade_cat.jpg">
-        <br><br>
-        <h2>Salade </h2>
-      </div>
-      <div class="zoom-image-container">
-        <br><br>
-        <img src="/images_the_district/category/sandwich_cat.jpg">
-        <br><br>
-        <h2>Sandwich </h2>
-
-      </div>
-    </div>
-
-    <br><br>
-    <div class="button-container">
-      <button class="prev-btn">Précédent</button>
-      <button class="next-btn">Suivant</button>
-    </div>
-
-    <div class="footer">
-      <div class="IMGRS">
-        <a href="https://fr-fr.facebook.com/">
-          <img class="RS" src="/images_the_district/the_district_brand/FB.png" alt="RS" title="logo">
-        </a>
-        <a href="https://www.youtube.com/">
-          <img class="RS" src="/images_the_district/the_district_brand/YT.png" alt="RS" title="logo">
-        </a>
-        <a href="https://twitter.com/?lang=fr">
-          <img class="RS" src="/images_the_district/the_district_brand/Twitter.png" alt="RS" title="logo">
-        </a>
-        <a href="https://www.pinterest.fr/">
-          <img class="RS" src="/images_the_district/the_district_brand/Pinterest.png" alt="RS" title="logo">
-        </a>
-        <a href="https://www.instagram.com/">
-          <img class="RS" src="/images_the_district/the_district_brand/Instagram.jpeg" alt="RS" title="logo">
-        </a>
-        <a
-          href="https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.google.com/&sessionRedirect=https%3A%2F%2Ffr.linkedin.com%2F">
-          <img class="RS" src="/images_the_district/the_district_brand/Linkedin.png" alt="RS" title="RS">
-        </a>
-      </div>
-    </div>
-
+    // Ajouter un gestionnaire d'événements au bouton "Afficher moins"
+    showLessBtn.addEventListener('click', function () {
+      secondRow.classList.add('d-none');
+      thirdRow.classList.add('d-none');
+      loadMoreBtn.classList.remove('d-none');
+      showLessBtn.classList.add('d-none');
+    });
+  </script>
+  <!--Partie Script en Java Script permettant d'afficher plus ou moins selon la demande l'utilisateur lors du clique sur les boutons-->
+  </div>
+  </div>
 </body>
+<foot>
+  <nav>
+    <div class="d-flex justify-content-end align-items-center">
+      <a id="arrow-up" class="me-5">
+        <i class="fa-solid fa-arrow-up fa-beat fa-2xl"
+          style="color: #ff7800;"></i><!--Flêche à droite permettant de remonter en haut de la page-->
+      </a>
+    </div>
+  </nav>
+  <!--Partie Script pour la flêche-->
+  <script>
+    document.getElementById('arrow-up').addEventListener('click', function () {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+  <!--fin de la partie Script pour la flêche-->
+  <div class="d-flex justify-content-center align-items-center couleur-navigation">
+    <!--Début de la partie Réseaux Sociaux-->
+    <a class="mx-5"><i class="fa-brands fa-instagram fa-bounce" style="color: #ff7800;font-size:100px;"></i></a>
+    <a class="mx-5"><i class="fa-brands fa-pinterest fa-bounce" style="color: #ff7800;font-size:100px;"></i></a>
+    <a class="mx-5"><i class="fa-brands fa-twitter fa-bounce" style="color: #ff7800;font-size:100px;"></i></a>
+    <a class="mx-5"><i class="fa-brands fa-linkedin fa-bounce" style="color: #ff7800;font-size:100px;"></i></a>
+    <a class="mx-5"><i class="fa-brands fa-facebook fa-bounce" style="color: #ff7800;font-size:100px"></i></a>
+    <a class="mx-5"><i class="fa-brands fa-youtube fa-bounce" style="color: #ff7800;font-size:100px"></i></a>
+  </div><!--Fin de la partie Réseaux Sociaux-->
+</foot>
 
 </html>
