@@ -33,7 +33,8 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link custom-heading active fs-1" aria-current="page" href="/The District/index.html">Accueil</a>
+                <a class="nav-link custom-heading active fs-1" aria-current="page"
+                  href="/The District/index.html">Accueil</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link custom-heading active fs-1" href="/The District/Categorie.html">Catégorie</a>
@@ -45,6 +46,7 @@
                 <a class="nav-link dropdown-toggle custom-heading active fs-1" href="#" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false">Plats</a>
                 <ul class="dropdown-menu custom-heading" aria-labelledby="menudropdown">
+                  <li><a class="dropdown-item custom-heading active fs-2" href="#">Choix</a></li>
                   <li><a class="dropdown-item custom-heading active fs-2" href="#">Asiatiques</a></li>
                   <li><a class="dropdown-item custom-heading active fs-2" href="#">Burgers</a></li>
                   <li><a class="dropdown-item custom-heading active fs-2" href="#">Pâtes</a></li>
@@ -71,22 +73,22 @@
         </div>
       </nav><!--Fin de la NavBar-->
     </header><!--Fin du header pour la partie Layout(entete) -->
-    <br>
+    <br><br>
     <div class="d-flex justify-content-center couleur-navigation"><!--Début de la partie Carousel-->
       <div class="row">
         <div class="col">
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div id="carouselaccueil" class="carousel slide" data-bs-ride="carousel" data-interval="2000">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/images_the_district/bg.jpg" class="d-block" alt="..." style="width:900px;height:450px;">
+              <div class="carouselmedia carousel-item active">
+                  <img src="/images_the_district/bg.jpg" class="d-block" alt="..." style="width:900px;height:450px;">
               </div>
-              <div class="carousel-item">
+              <div class="carouselmedia carousel-item">
                 <img src="/images_the_district/bg1.jpeg" class="d-block" alt="..." style="width:900px;height:450px;">
               </div>
-              <div class="carousel-item">
+              <div class="carouselmedia carousel-item">
                 <img src="/images_the_district/bg2.jpeg" class="d-block" alt="..." style="width:900px;height:450px;">
               </div>
-              <div class="carousel-item">
+              <div class="carouselmedia carousel-item">
                 <img src="/images_the_district/bg3.jpeg" class="d-block" alt="..." style="width:900px;height:450px;">
               </div>
             </div>
@@ -100,18 +102,18 @@
       aria-label="Toggle navigation">
       <span class="navbar-toggler-icon text-primary"></span>
     </button>
-    <div class="d-flex justify-content-center align-items-center couleur-navigation carousel-item">
+    <div class="taillelogoaccueil d-flex justify-content-center align-items-center couleur-navigation carousel-item">
       <!--Corps de la page avec le slogan ainsi que quelques images-->
-      <ul class="nav-link couleurslogan "><u class="fs-1"><b>Large choix sur vos produits ! </b></u>
-        <p class="fs-4">Bienvenue dans l'ère culinaire de The District : une fusion exquise de
-          saveurs rapides et de satisfaction gourmande, où chaque bouchée vous transporte vers un monde de délices.</p>
+      <ul class="nav-link couleurslogan "><u class="fs-1 taillelogoaccueil"><b>Large choix sur vos produits ! </b></u>
+        <p class="fs-4 taillelogoaccueil">Bienvenue dans l'ère culinaire de The District :</p>
+        <p>une fusion exquise de saveurs rapides et de satisfaction gourmande,
+          où chaque bouchée vous transporte vers un monde de délices.</p>
       </ul>
-      <a class="mx-5"><img src="/images_the_district/burger.jpg" class="d-block" alt="..."
-          style="width:250px;height:250px;"></a>
-      <a class="mx-5"><img src="/images_the_district/pizza.jpg" class="d-block" alt="..."
-          style="width:250px;height:250px;"></a>
+      <a class="taillelogoaccueil mx-5"><img src="/images_the_district/burger.jpg" class="taillelogoaccueil d-block"
+          alt="..." style="width:250px;height:250px;"></a>&nbsp;
+      <a class=" taillelogoaccueil mx-5"><img src="/images_the_district/pizza.jpg" class="d-block taillelogoaccueil"
+          alt="..." style="width:250px;height:250px;"></a>nbsp;
     </div><!--Corps de la page avec le slogan ainsi que quelques images-->
-    <br>
   </div>
 </body>
 <foot>
@@ -133,15 +135,22 @@
     });
   </script>
   <!--fin de la partie Script pour la flêche-->
-  <div class="d-flex justify-content-center align-items-center couleur-navigation">
+  <div class="couleur-navigation placers d-flex justify-content-center align-items-center flex-wrap">
     <!--Début de la partie Réseaux Sociaux-->
-    <a class="mx-5"><i class="fa-brands fa-instagram fa-bounce" style="color: #ff7800;font-size:100px;"></i></a>
-    <a class="mx-5"><i class="fa-brands fa-pinterest fa-bounce" style="color: #ff7800;font-size:100px;"></i></a>
-    <a class="mx-5"><i class="fa-brands fa-twitter fa-bounce" style="color: #ff7800;font-size:100px;"></i></a>
-    <a class="mx-5"><i class="fa-brands fa-linkedin fa-bounce" style="color: #ff7800;font-size:100px;"></i></a>
-    <a class="mx-5"><i class="fa-brands fa-facebook fa-bounce" style="color: #ff7800;font-size:100px"></i></a>
-    <a class="mx-5"><i class="fa-brands fa-youtube fa-bounce" style="color: #ff7800;font-size:100px"></i></a>
+    <a class="taillelogors my-5 mx-5"><i class="fa-brands fa-instagram fa-bounce"
+        style="color: #ff7800;font-size:100px;"></i></a>
+    <a class="taillelogors my-5 mx-5"><i class="fa-brands fa-pinterest fa-bounce"
+        style="color: #ff7800;font-size:100px;"></i></a>
+    <a class="taillelogors my-5 mx-5"><i class="fa-brands fa-twitter fa-bounce"
+        style="color: #ff7800;font-size:100px;"></i></a>
+    <a class="taillelogors my-5 mx-5"><i class="fa-brands fa-linkedin fa-bounce"
+        style="color: #ff7800;font-size:100px;"></i></a>
+    <a class="taillelogors my-5 mx-5"><i class="fa-brands fa-facebook fa-bounce"
+        style="color: #ff7800;font-size:100px"></i></a>
+    <a class="taillelogors my-5 mx-5"><i class="fa-brands fa-youtube fa-bounce"
+        style="color: #ff7800;font-size:100px"></i></a>
   </div><!--Fin de la partie Réseaux Sociaux-->
+
 </foot>
 
 </html>
