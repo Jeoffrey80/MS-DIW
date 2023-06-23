@@ -2,6 +2,51 @@
   background: #970747 !important;
 }
 
+.footer-social {
+  position: fixed;
+  bottom: fixed;
+  width: 100%;
+}
+
+.btnmoins,
+.btnplus {
+  background-color: white;
+  /* Couleur de fond des boutons */
+  color: black;
+  /* Couleur du texte des boutons */
+  border-color: white;
+  /* Couleur de la bordure des boutons */
+}
+
+.btnmoins:hover,
+.btnplus:hover {
+  background-color: black;
+  /* Couleur de fond des boutons au survol */
+  color: white !important    ;
+  /* Couleur du texte des boutons au survol */
+  border-color: black;
+  /* Couleur de la bordure des boutons au survol */
+}
+
+.affichageincdec {
+  background-color: white;
+  /* Couleur de fond de l'affichage */
+  color: black;
+  /* Couleur du texte de l'affichage */
+  border-color: white;
+  /* Couleur de la bordure de l'affichage */
+  
+}
+
+.affichageincdec:hover {
+  background-color: black;
+  /* Couleur de fond de l'affichage */
+  color: white;
+  /* Couleur du texte de l'affichage */
+  border-color: black;
+  /* Couleur de la bordure de l'affichage */
+}
+
 .custom-rounded {
   border-radius: 25px !important;
 }
@@ -47,19 +92,20 @@
   border-radius: 25px;
 }
 
-.colortext{
-  color:#ff7800
+.colortext {
+  color: #ff7800
 }
-.navicommande{
+
+.navicommande {
   background-color: #FEF4E8 !important;
   background: #FEF4E8 !important;
   border-color: #FEF4E8 !important;
-  color: #FEF4E8!important;
+  color: #FEF4E8 !important;
   border-radius: 25px !important;
   width: 1000px;
 }
 
-.navicommande img{
+.navicommande img {
   background-color: #FEF4E8 !important;
   background: #FEF4E8 !important;
   border-color: #FEF4E8 !important;
@@ -78,6 +124,10 @@
 .carousel-item img {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.video-item img {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
 }
 
 .couleurtitre {
@@ -156,7 +206,7 @@ body {
 /* Styles pour la version mobile */
 @media (max-width: 768px) {
 
-  .carouselmedia img{
+  .carouselmedia img {
     width: 450px !important;
     height: 275px !important;
   }
@@ -178,16 +228,18 @@ body {
     margin-left: 0rem !important;
     margin-right: 0rem !important;
   }
-  .taillelogoaccueil img{
-    width:100px !important;
-    height:100px !important;
+
+  .taillelogoaccueil img {
+    width: 100px !important;
+    height: 100px !important;
   }
-  .taillelogoaccueil p{
+
+  .taillelogoaccueil p {
     font-size: 16px !important;
   }
 
   .placers {
-    position:relative;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
@@ -236,15 +288,16 @@ body {
     margin-left: 0px;
     /* Supprime l'espacement pour le premier lien */
 
-    
+
   }
-  .navicommande{
+
+  .navicommande {
     background-color: #FEF4E8 !important;
     background: #FEF4E8 !important;
     border-color: #FEF4E8 !important;
-    color: #FEF4E8!important;
+    color: #FEF4E8 !important;
     border-radius: 25px !important;
-    width: 767px;
-      
-    }
+    width: 700px !important;
+    position: relative !important;
+  }
 }
