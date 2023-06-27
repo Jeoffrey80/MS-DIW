@@ -1,13 +1,56 @@
 .color {
   background: #970747 !important;
 }
-
-.footer-social {
-  position: fixed;
-  bottom: fixed;
+footer.sticky-footer {
   width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.ulplats {
+  list-style-type: none;
+  padding: 0;
+  display: flex; /* Afficher les éléments de la liste en ligne */
 }
 
+.liplats {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-basis: 33.33%; /* Répartir les éléments sur 3 colonnes égales */
+  box-sizing: border-box; /* Inclure la marge et le rembourrage dans la largeur */
+  padding: 10px; /* Ajouter un peu d'espace entre les éléments */
+}
+img{
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 10px;
+}
+
+.liplats img {
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 10px;
+}
+.liplats button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 10px 20px;
+  text-align: center;
+}
+main{
+  margin-bottom: 500px;
+}
 .btnmoins,
 .btnplus {
   background-color: white;
@@ -26,6 +69,18 @@
   /* Couleur du texte des boutons au survol */
   border-color: black;
   /* Couleur de la bordure des boutons au survol */
+}
+
+.colorbtnplat{
+  background-color: #FEF4E8;
+  color:#000000;
+  border-color: #000000;
+}
+
+.colorbtnplat:hover{
+  background-color: #000000;
+  color:#ffffff;
+  border-color: #ffffff;
 }
 
 .affichageincdec {
@@ -176,7 +231,12 @@ body {
 .parallax-bg {
   height: 100vh;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center;.sticky-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff; /* ajustez la couleur du fond du footer selon vos besoins */
+  }
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -205,9 +265,13 @@ body {
 
 /* Styles pour la version mobile */
 @media (max-width: 768px) {
+.video{
+  width:350px; 
+  height:250px;
+}
 
   .carouselmedia img {
-    width: 450px !important;
+    width: 350px !important;
     height: 275px !important;
   }
 

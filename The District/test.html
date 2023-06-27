@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exemple de liste avec images, noms, descriptions et prix</title>
+  <style>
+    /* Styles CSS pour la mise en page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .ulplats {
+      list-style-type: none;
+      padding: 0;
+      display: flex; /* Afficher les éléments de la liste en ligne */
+    }
+
+    .liplats {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-basis: 33.33%; /* Répartir les éléments sur 3 colonnes égales */
+      box-sizing: border-box; /* Inclure la marge et le rembourrage dans la largeur */
+      padding: 10px; /* Ajouter un peu d'espace entre les éléments */
+    }
+
+    .liplats img {
+      max-width: 100px;
+      max-height: 100px;
+      margin-right: 10px;
+    }
+
+    .liplats button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="ulplats">
+    <li class="liplats">
+      <img src="/images_the_district/food/buffalo-chicken.webp" alt="Image 1">
+      <div>
+        <h3>Nom du produit 1</h3>
+        <p>Description du produit 1</p>
+        <p>Prix : 19.99€</p>
+        <button onclick="ajouterAuPanier(1)">Ajouter</button>
+      </div>
+    </li>
+    <li class="liplats">
+      <img src="/images_the_district/food/cheesburger.jpg" alt="Image 2">
+      <div>
+        <h3>Nom du produit 2</h3>
+        <p>Description du produit 2</p>
+        <p>Prix : 24.99€</p>
+        <button onclick="ajouterAuPanier(2)">Ajouter</button>
+      </div>
+    </li>
+    <li class="liplats">
+      <img src="/images_the_district/food/Food-Name-3631.jpg" alt="Image 3">
+      <div>
+        <h3>Nom du produit 3</h3>
+        <p>Description du produit 3</p>
+        <p>Prix : 14.99€</p>
+        <button onclick="ajouterAuPanier(3)">Ajouter</button>
+      </div>
+    </li>
+  </ul>
+
+  <button onclick="afficherPanier()">Voir le Panier</button>
+
+  <script>
+    function ajouterAuPanier(idProduit) {
+      var produit = {
+        image: "",
+        nom: "",
+        description: "",
+        prix: 0
+      };
+
+      if (idProduit === 1) {
+        produit.image = "/images_the_district/food/buffalo-chicken.webp";
+        produit.nom = "Nom du produit 1";
+        produit.description = "Description du produit 1";
+        produit.prix = 19.99;
+      } else if (idProduit === 2) {
+        produit.image = "/images_the_district/food/cheesburger.jpg";
+        produit.nom = "Nom du produit 2";
+        produit.description = "Description du produit 2";
+        produit.prix = 24.99;
+      } else if (idProduit === 3) {
+        produit.image = "/images_the_district/food/Food-Name-3631.jpg";
+        produit.nom = "Nom du produit 3";
+        produit.description = "Description du produit 3";
+        produit.prix = 14.99;
+      }
+
+      var panier = JSON.parse(sessionStorage.getItem("panier")) || [];
+      panier.push(produit);
+      sessionStorage.setItem("panier", JSON.stringify(panier));
+
+      alert("Le produit a été ajouté au panier !");
+    }
+
+    function afficherPanier() {
+      window.location.href = "panier.html";
+    }
+  </script>
+</body>
+
+</html>
