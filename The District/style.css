@@ -21,11 +21,11 @@ footer.sticky-footer {
   box-sizing: border-box; /* Inclure la marge et le rembourrage dans la largeur */
   padding: 10px; /* Ajouter un peu d'espace entre les éléments */
 }
-img{
-  max-width: 100px;
-  max-height: 100px;
-  margin-right: 10px;
-}
+.imgcommande {
+  max-width: 100px !important;
+  max-height: 100px !important;
+  margin-right: 10px !important;
+}*/
 
 .liplats img {
   max-width: 100px;

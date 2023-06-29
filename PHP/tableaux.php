@@ -47,6 +47,7 @@ foreach ($mois as $moisNom => $nbJours) {
 }
 echo"";
 ?>
+
   </table>
 </body>
 </html>
